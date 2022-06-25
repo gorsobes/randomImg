@@ -1,0 +1,26 @@
+.wrap {
+    background: linear-gradient(90deg, #EFEFE7 50%, #BCE8EA 50%);
+    position: relative;
+    padding: 40px;
+    box-sizing: border-box;
+  }
+  .wrap:before, 
+  .wrap:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 10px;
+    background: linear-gradient(90deg, #BCE8EA 50%, #EFEFE7 50%);
+    left: 25%;
+  }
+  .wrap:before {top: 15px;}
+  .wrap:after {bottom: 15px;}
+  .wrap img {
+    width: auto;
+    height: 560px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+ 

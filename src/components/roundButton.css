@@ -1,0 +1,49 @@
+.circle,
+.inner {
+    border-radius: 50%;
+      height: 100px;
+    width: 100px;
+    box-sizing: content-box;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    left: 35%;
+}
+.circle {
+    background-color: #fff;
+    padding: 14px;
+    position: relative;
+    box-shadow: inset -20px 20px 20px rgba(0,0,0,.2), -20px 20px 30px rgba(0,0,0,.3);
+    display: inline-block;
+    margin: 20px auto;
+   
+}
+.circle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: inset -2px 2px 2px #fff;
+    border-radius: 50%;
+}
+.inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset -3px 3px 6px rgba(0, 0, 0, .3);
+    background: #337AB7; /* Фон кнопки */
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif; 
+    transition: all .3s ease-in-out;    
+}
+a:hover .inner {
+    background: #78c2ff;  /* Фон кнопки при наведении */
+    color: #337AB7; 
+}
