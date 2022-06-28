@@ -1,13 +1,13 @@
 import React from 'react';
 import ConnectImg from './connectIMG';
 import './picture.css';
-function Picture({count,className}){
+function Picture({url,classNam}){
 
   
 return(
     
-      <div class="wrap">
- <ConnectImg count={count} className={className}/>
+      <div className="wrap">
+ <ConnectImg url={url} classNam={classNam}/>
 </div>
     
 )

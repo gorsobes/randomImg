@@ -1,4 +1,4 @@
-.container { animation: show 3s;}
+.container { animation: show 4s;}
 @keyframes show {
 
     from {opacity: 0;} to {opacity: 1;}

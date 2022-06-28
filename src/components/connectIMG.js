@@ -1,16 +1,12 @@
-import React, { useEffect} from 'react';
+import React from 'react';
 import './connectIMG.css'
-function ConnectImg({count,className}) {
-   
-  let url = `https://randomfox.ca/images/${count}.jpg`
-
-      return (
-        <div>
-      <img src={url} className={className}/>
-        </div>
-      );
-    
-  }
+function ConnectImg({url,classNam}) {
+  return (
+    <div>
+  <img src={url} className={classNam} alt="лисички"/>
+    </div>
+  );
+} 
   export default ConnectImg;
 
   

@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
 import Picture from './picture';
-
 import './randomButton.css';
 
-
-
 function RandomButton(){
-    const [className, setClassName] = useState("container");
-
-let randoms = function(){ return Math.ceil(Math.random()*121)}; 
+    const [classNam, setClassName] = useState("container");
+    const images = require.context('../../public/img', true);
+let randoms = function(){ return Math.ceil(Math.random()*100)}; 
 let init = randoms();
 const [count, setCount] = useState(init);
-let cssclass = () => className == "container" ? "container1" : "container";
-  
+let cssclass = () => classNam == "container" ? "container1" : "container";
+let url = images(`./${count}.jpg`);
 return(
     <div>
             <div className="rightB">
@@ -26,7 +23,7 @@ return(
     </div> 
         </a>
     </div>
-<Picture count={count} className={className}/>
+<Picture url={url} classNam={classNam}/>
     </div>
     
 )
